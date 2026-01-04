@@ -1,0 +1,2017 @@
+.dashboard {
+  background-color: #f6f7f9;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.dashboardContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.topNavigation {
+  background-color: white;
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.navLeft {
+  display: flex;
+  gap: 16px;
+  height: 58px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 30px;
+  overflow: clip;
+  position: relative;
+  flex-shrink: 0;
+  width: 32px;
+}
+
+.logoImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.logoUnion {
+  position: absolute;
+  top: 2.33%;
+  right: 0;
+  bottom: 62.79%;
+  left: 58.7%;
+}
+
+.logoUnionImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.navTabs {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.navTabActive {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+
+.navTabContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: clip;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+
+.navTabText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+  color: #77689b;
+  font-size: 16px;
+}
+
+.selectedIndicator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.selectedIndicatorBar {
+  background-color: #e77479;
+  height: 2px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.navTab {
+  display: flex;
+  flex-direction: column;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.navTabTextInactive {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.navRight {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.buttonRequest {
+  background-color: #77689b;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+  border-radius: 60px;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.buttonRequest:hover {
+  background-color: #655a7f;
+}
+
+.buttonIcon {
+  overflow: clip;
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.buttonIconInner {
+  position: absolute;
+  inset: 8.33%;
+}
+
+.buttonIconVector {
+  position: absolute;
+  inset: -3.75%;
+}
+
+.buttonIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 0.28px;
+}
+
+.avatarDesktop {
+  background-color: white;
+  border: 1px solid #e77479;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  border-radius: 180px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.mainContentWrapper {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  padding: 32px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.leftColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-width: 0;
+}
+
+.rightColumn {
+  width: 430px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.greetingSection {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.greetingLarge {
+  position: relative;
+  flex-shrink: 0;
+  color: #333;
+  font-size: 48px;
+}
+
+.welcomeText {
+  position: relative;
+  flex-shrink: 0;
+  color: #666;
+  font-size: 18px;
+}
+
+.timeCard {
+  background-color: #f5f6f8;
+  border: 1px solid #e1e5eb;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+  border-radius: 24px;
+  flex-shrink: 0;
+}
+
+.clockIcon {
+  overflow: clip;
+  position: relative;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.clockIconInner {
+  position: absolute;
+  inset: 8.33%;
+}
+
+.clockIconVector {
+  position: absolute;
+  inset: -2.81%;
+}
+
+.clockIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.timeCardContent {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.locationText {
+  position: relative;
+  flex-shrink: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.timeLarge {
+  position: relative;
+  flex-shrink: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.dateText {
+  position: relative;
+  flex-shrink: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+
+.statsCard {
+  background-color: white;
+  border: 1px solid var(--greyscale-border-default, #b8c2d0);
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  overflow: clip;
+  padding: 32px;
+  position: relative;
+  border-radius: 24px;
+  flex-shrink: 0;
+}
+
+.statsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+  width: 631px;
+}
+
+.divider {
+  height: 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.dividerInner {
+  position: absolute;
+  inset: -0.5px 0;
+}
+
+.dividerImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.statsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.statsTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.statsGrid {
+  display: flex;
+  gap: 102px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.statValueRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.statValue {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #77689b;
+  font-size: 32px;
+}
+
+.buildingIcon {
+  overflow: clip;
+  position: relative;
+  border-radius: 3px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.buildingIconPart1 {
+  position: absolute;
+  top: 91.67%;
+  right: 8.33%;
+  bottom: 8.33%;
+  left: 8.33%;
+}
+
+.buildingIconPart2 {
+  position: absolute;
+  top: 8.33%;
+  right: 12.5%;
+  bottom: 8.33%;
+  left: 45.85%;
+}
+
+.buildingIconPart3 {
+  position: absolute;
+  top: 20.83%;
+  right: 37.5%;
+  bottom: 8.33%;
+  left: 12.5%;
+}
+
+.buildingIconPart4 {
+  position: absolute;
+  top: 79.17%;
+  right: 62.5%;
+  bottom: 8.33%;
+  left: 37.5%;
+}
+
+.buildingIconPart5 {
+  position: absolute;
+  bottom: 66.67%;
+  left: 25%;
+  right: 50%;
+  top: 33.33%;
+}
+
+.buildingIconPart6 {
+  position: absolute;
+  bottom: 54.17%;
+  left: 25%;
+  right: 50%;
+  top: 45.83%;
+}
+
+.buildingIconPart7 {
+  position: absolute;
+  bottom: 41.67%;
+  left: 25%;
+  right: 50%;
+  top: 58.33%;
+}
+
+.buildingIconVector {
+  position: absolute;
+  inset: -0.75px -3.75%;
+}
+
+.buildingIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.statLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+  color: #333;
+}
+
+.statLabelText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.statLabelSubtext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  opacity: 0.66;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.homeIcon {
+  overflow: clip;
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.homeIconInner {
+  position: absolute;
+  inset: 8.33% 12.5%;
+}
+
+.homeIconVector {
+  position: absolute;
+  inset: -3.75% -4.17%;
+}
+
+.homeIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.fireIcon {
+  overflow: clip;
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.fireIconInner {
+  position: absolute;
+  inset: 12.5% 16.67%;
+}
+
+.fireIconVector {
+  position: absolute;
+  inset: -4.17% -4.69%;
+}
+
+.fireIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.statsImage {
+  position: absolute;
+  left: 684px;
+  width: 253px;
+  height: 253px;
+  top: -27px;
+}
+
+.statsImageInner {
+  position: absolute;
+  inset: 2%;
+}
+
+.statsImageWrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.statsImageImg {
+  position: absolute;
+  left: 0;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.calendarCard {
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px;
+  position: relative;
+  border-radius: 24px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.buttonPrimary {
+  background-color: #77689b;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+  border-radius: 60px;
+  flex-shrink: 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.buttonPrimary:hover:not(:disabled) {
+  background-color: #655a7f;
+}
+
+.buttonPrimary:disabled,
+.buttonPrimaryDisabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.buttonSecondary {
+  background-color: white;
+  border: 2px solid #77689b;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+  border-radius: 60px;
+  flex-shrink: 0;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.buttonSecondary:hover {
+  background-color: #f6f7f9;
+  border-color: #655a7f;
+}
+
+.buttonTextSecondary {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #77689b;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+}
+
+/* Monthly Stats Card */
+.monthlyStatsCard {
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  display: flex;
+  height: 203px;
+  align-items: flex-start;
+  overflow: clip;
+  padding: 24px;
+  position: relative;
+  border-radius: 24px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.monthlyStatsContent {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.monthlyStatsRow {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.attendanceCard {
+  background-color: var(--text-negative, #f8f9fb);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 24px;
+  position: relative;
+  border-radius: 24px;
+  flex-shrink: 0;
+  width: 403px;
+}
+
+.attendanceTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.attendanceStats {
+  display: flex;
+  gap: 218px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.attendanceStatItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.leaveRequestsCard {
+  background-color: var(--text-negative, #f8f9fb);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 24px;
+  position: relative;
+  border-radius: 24px;
+  flex-shrink: 0;
+  width: 427px;
+}
+
+.leaveRequestsTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.leaveRequestsStats {
+  display: flex;
+  gap: 218px;
+  align-items: flex-start;
+  opacity: 0.82;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.leaveRequestStatItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.bookmarkIcon {
+  overflow: clip;
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.bookmarkIconInner {
+  position: absolute;
+  top: 10.42%;
+  right: 19%;
+  bottom: 10.42%;
+  left: 18.75%;
+}
+
+.bookmarkIconVector {
+  position: absolute;
+  inset: -3.95% -5.02%;
+}
+
+.bookmarkIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.clockIconSmall {
+  overflow: clip;
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+/* Leave Request List Card */
+.leaveRequestCard {
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px;
+  position: relative;
+  border-radius: 24px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.leaveRequestContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.leaveRequestHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.leaveRequestTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.cancelTag {
+  background-color: white;
+  border: 1px solid var(--greyscale-border-default, #e1e5eb);
+  display: flex;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 6px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  border-radius: 32px;
+  flex-shrink: 0;
+}
+
+.tagText {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tagTextContent {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 12px;
+  position: relative;
+  flex-shrink: 0;
+  color: #2a2a2a;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.tagIcon {
+  position: relative;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.tagIconInner {
+  position: absolute;
+  inset: 6.25%;
+}
+
+.tagIconVector {
+  position: absolute;
+  inset: 0;
+}
+
+.tagIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.leaveRequestList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.leaveRequestItem {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.leaveRequestActions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.leaveRequestItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.leaveRequestValueRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.leaveRequestValue {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #77689b;
+  font-size: 32px;
+}
+
+.sunIcon {
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.sunIconPart1 {
+  position: absolute;
+  inset: 25%;
+}
+
+.sunIconPart2 {
+  position: absolute;
+  bottom: 87.5%;
+  left: 50%;
+  right: 50%;
+  top: 8.33%;
+}
+
+.sunIconPart3 {
+  position: absolute;
+  bottom: 8.33%;
+  left: 50%;
+  right: 50%;
+  top: 87.5%;
+}
+
+.sunIconPart4 {
+  position: absolute;
+  bottom: 50%;
+  left: 87.5%;
+  right: 8.33%;
+  top: 50%;
+}
+
+.sunIconPart5 {
+  position: absolute;
+  bottom: 50%;
+  left: 8.33%;
+  right: 87.5%;
+  top: 50%;
+}
+
+.sunIconPart6 {
+  position: absolute;
+  inset: 20.54% 20.54% 77.82% 77.82%;
+}
+
+.sunIconPart7 {
+  position: absolute;
+  inset: 77.83% 77.83% 20.54% 20.54%;
+}
+
+.sunIconPart8 {
+  position: absolute;
+  inset: 77.82% 20.54% 20.54% 77.82%;
+}
+
+.sunIconPart9 {
+  position: absolute;
+  inset: 20.54% 77.83% 77.83% 20.54%;
+}
+
+.sunIconVector {
+  position: absolute;
+  inset: -6.25%;
+}
+
+.sunIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.leaveRequestLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+  color: #333;
+}
+
+.leaveRequestLabelText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.leaveRequestLabelSubtext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  opacity: 0.66;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.pendingTag {
+  background-color: var(--yellow-200, #fbd8ad);
+  border: 1px solid var(--yellow-300, #fbc372);
+  display: flex;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  border-radius: 32px;
+  flex-shrink: 0;
+}
+
+.sirenIcon {
+  overflow: clip;
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.sirenIconInner {
+  position: absolute;
+  inset: 8.33%;
+}
+
+.sirenIconVector {
+  position: absolute;
+  inset: -3.75%;
+}
+
+.sirenIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .mainContentWrapper {
+    flex-direction: column;
+  }
+
+  .rightColumn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    overflow-x: hidden;
+  }
+
+  .dashboardContainer {
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .topNavigation {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: auto;
+    min-height: 90px;
+    flex-wrap: wrap;
+  }
+
+  .navLeft {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .navRight {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .mainContentWrapper {
+    padding: 16px;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .leftColumn {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .rightColumn {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .greetingSection {
+    width: 100%;
+  }
+
+  .statsCard {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .statsContent {
+    width: 100%;
+  }
+
+  .statsImage {
+    display: none;
+  }
+
+  .monthlyStatsCard {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 203px;
+  }
+
+  .monthlyStatsRow {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .attendanceCard {
+    width: 100%;
+  }
+
+  .leaveRequestsCard {
+    width: 100%;
+  }
+
+  .leaveRequestCard {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .leaveRequestItem {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .leaveRequestActions {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .timeCard {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .calendarCard {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .buttonGroup {
+    width: 100%;
+  }
+
+  .buttonPrimary,
+  .buttonSecondary {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  .statsGrid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .attendanceStats {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .leaveRequestsStats {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: transparent;
+  padding: 32px 40px;
+  margin-top: 48px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footerContent {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footerHeart {
+  font-size: 16px;
+  color: #e77479;
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+}
+
+.footerText {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.footerAZ {
+  color: #77689b;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.footerDesignStudios {
+  color: #666;
+  font-weight: 400;
+}
+
+.footerCredit {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #999;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 24px 16px;
+    margin-top: 32px;
+  }
+
+  .footerContent {
+    gap: 6px;
+  }
+
+  .footerLogo {
+    gap: 6px;
+  }
+
+  .footerHeart {
+    font-size: 14px;
+  }
+
+  .footerText {
+    font-size: 12px;
+  }
+
+  .footerCredit {
+    font-size: 11px;
+  }
+}
+
+/* Rewards Page Styles */
+.rewardsPage {
+  width: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.rewardsContent {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.leaderboardCard {
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  border-radius: 24px;
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.leaderboardTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 32px 0;
+  line-height: 24px;
+}
+
+/* Podium Container */
+.podiumContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.podiumCard {
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  max-width: 280px;
+  min-width: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.podiumCardFirst {
+  transform: scale(1.1);
+  background-color: #f8f9fb;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: #e1e5eb;
+  z-index: 2;
+}
+
+.podiumCardSide {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  background-color: #fafbfc;
+}
+
+.podiumRankBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #77689b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.podiumAvatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #e77479;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid #e77479;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.podiumAvatarFirst {
+  width: 72px;
+  height: 72px;
+  border-width: 3px;
+}
+
+.podiumAvatarText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 0.28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.podiumAvatarText img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.podiumInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+.podiumName {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 24px;
+}
+
+.podiumDescriptor {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 20px;
+}
+
+.podiumScore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.podiumScoreValue {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #77689b;
+  margin: 0;
+  line-height: 24px;
+}
+
+.podiumScoreLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+  line-height: 16px;
+}
+
+.leaderboardList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.leaderboardItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 16px;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.leaderboardRank {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #77689b;
+  min-width: 40px;
+  text-align: center;
+}
+
+.leaderboardAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #e77479;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid #e77479;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.leaderboardAvatarFirst {
+  width: 56px;
+  height: 56px;
+  border-width: 3px;
+}
+
+.leaderboardAvatarPodium {
+  width: 52px;
+  height: 52px;
+}
+
+.leaderboardAvatarText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 0.28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.leaderboardAvatarText img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.leaderboardInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.leaderboardName {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 24px;
+}
+
+.leaderboardDescriptor {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 20px;
+}
+
+.leaderboardScore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.leaderboardScoreValue {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #77689b;
+  margin: 0;
+  line-height: 24px;
+}
+
+.leaderboardScoreLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+  line-height: 16px;
+}
+
+/* Your Position Card */
+.yourPositionCard {
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  border-radius: 24px;
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.yourPositionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.yourPositionTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 24px;
+}
+
+.yourPositionRank {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #77689b;
+  line-height: 1;
+}
+
+.yourPositionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.yourPositionStats {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.yourPositionStatItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.yourPositionStatValue {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #77689b;
+  margin: 0;
+  line-height: 1;
+}
+
+.yourPositionStatLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 20px;
+}
+
+.yourPositionMessage {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 20px;
+  font-style: italic;
+}
+
+.rewardsSection {
+  width: 100%;
+}
+
+.rewardsSectionTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 24px 0;
+  line-height: 24px;
+}
+
+.rewardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.rewardCard {
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.rewardIcon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.rewardIcon svg {
+  width: 100%;
+  height: 100%;
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.rewardIconPlaceholder {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.rewardTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 24px;
+}
+
+.rewardPoints {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 20px;
+}
+
+.rewardButton {
+  background-color: #77689b;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  padding: 12px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  letter-spacing: 0.28px;
+  margin-top: 8px;
+}
+
+.rewardButton:hover:not(:disabled) {
+  background-color: #655a7f;
+}
+
+.rewardButtonDisabled {
+  background-color: #e1e5eb;
+  color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .rewardsPage {
+    padding: 16px;
+  }
+
+  .rewardsContent {
+    gap: 24px;
+  }
+
+  .leaderboardCard {
+    padding: 24px;
+  }
+
+  .podiumContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .podiumCard {
+    max-width: 100%;
+    width: 100%;
+    transform: none !important;
+  }
+
+  .podiumCardFirst {
+    transform: none !important;
+    margin-bottom: 0;
+  }
+
+  .podiumAvatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .podiumAvatarFirst {
+    width: 64px;
+    height: 64px;
+  }
+
+  .podiumAvatarText {
+    font-size: 18px;
+  }
+
+  .leaderboardItem {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .leaderboardRank {
+    font-size: 18px;
+    min-width: 32px;
+  }
+
+  .leaderboardAvatar {
+    width: 44px;
+    height: 44px;
+  }
+
+  .leaderboardAvatarFirst {
+    width: 52px;
+    height: 52px;
+  }
+
+  .leaderboardAvatarPodium {
+    width: 48px;
+    height: 48px;
+  }
+
+  .leaderboardAvatarText {
+    font-size: 14px;
+  }
+
+  .leaderboardScore {
+    min-width: 60px;
+  }
+
+  .leaderboardScoreValue {
+    font-size: 16px;
+  }
+
+  .yourPositionCard {
+    padding: 20px;
+  }
+
+  .yourPositionStats {
+    gap: 24px;
+  }
+
+  .yourPositionStatValue {
+    font-size: 20px;
+  }
+
+  .rewardsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .rewardCard {
+    padding: 20px;
+  }
+}

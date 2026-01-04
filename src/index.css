@@ -1,0 +1,50 @@
+:root {
+  /* Design System Colors - Greyscale */
+  --greyscale-surface-subtle: #f8f9fb;
+  --greyscale-surface-default: #f5f6f8;
+  --greyscale-surface-disabled: #ebeef2;
+  --greyscale-border-default: #b8c2d0;
+  --greyscale-border-disabled: #e1e5eb;
+  --greyscale-border-darker: #707d8f;
+  --greyscale-text-title: #1d2228;
+  --greyscale-text-body: #373e48;
+  --greyscale-text-subtitle: #707d8f;
+  --greyscale-text-caption: #8f9fb5;
+  --greyscale-text-negative: #f8f9fb;
+  --greyscale-text-disabled: #b8c2d0;
+
+  /* Primary Colors */
+  --primary-purple: #77689b;
+  --primary-coral: #e77479;
+  --coral-light: #ffb8bb;
+
+  /* Background */
+  --background-white: #ffffff;
+  --background-default: #f6f7f9;
+
+  /* Text Colors */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-white: #ffffff;
+
+  /* Border Colors */
+  --border-default: #e1e5eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-default);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

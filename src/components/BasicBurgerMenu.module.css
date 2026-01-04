@@ -1,0 +1,59 @@
+.burgerMenu {
+  position: relative;
+  overflow: clip;
+}
+
+.line1 {
+  position: absolute;
+  display: flex;
+  top: 29.17%;
+  right: 16.67%;
+  bottom: 70.83%;
+  left: 16.67%;
+  align-items: center;
+  justify-content: center;
+}
+
+.line2 {
+  position: absolute;
+  display: flex;
+  bottom: 50%;
+  left: 16.67%;
+  right: 16.67%;
+  top: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.line3 {
+  position: absolute;
+  display: flex;
+  top: 70.83%;
+  right: 16.67%;
+  bottom: 29.17%;
+  left: 16.67%;
+  align-items: center;
+  justify-content: center;
+}
+
+.vectorContainer {
+  flex: none;
+}
+
+.vector {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.vectorInner {
+  position: absolute;
+  inset: -0.75px -4.69%;
+}
+
+.vectorImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

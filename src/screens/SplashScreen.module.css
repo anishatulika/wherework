@@ -1,0 +1,285 @@
+.splashScreen {
+  background-color: #77689b;
+  border: 1px solid #e1e5eb;
+  overflow: clip;
+  position: relative;
+  border-radius: 60px;
+  width: 100%;
+  height: 100%;
+}
+
+.topNavigation {
+  position: absolute;
+  background-color: #77689b;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: -1px;
+  top: -1px;
+  width: 402px;
+}
+
+.statusBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 19px;
+  padding-top: 21px;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+  flex-shrink: 0;
+  width: 402px;
+}
+
+.time {
+  display: flex;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  padding-top: 1.5px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.timeText {
+  font-family: 'SF Pro', sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+}
+
+.dynamicIslandContainer {
+  display: inline-grid;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content;
+  justify-items: start;
+  line-height: 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.dynamicIslandBody {
+  background-color: #111;
+  grid-column: 1;
+  height: 36.955px;
+  margin-left: 0;
+  margin-top: 0;
+  border-radius: 69.291px;
+  grid-row: 1;
+  width: 123.57px;
+}
+
+.sensorInside {
+  background-color: rgba(34, 34, 34, 0.6);
+  grid-column: 1;
+  height: 20.787px;
+  margin-left: 8.08px;
+  margin-top: 8.08px;
+  border-radius: 69.291px;
+  grid-row: 1;
+  width: 63.517px;
+}
+
+.frontCamera {
+  grid-column: 1;
+  margin-left: 100.47px;
+  margin-top: 10.39px;
+  position: relative;
+  grid-row: 1;
+  width: 16.168px;
+  height: 16.168px;
+}
+
+.frontCameraImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.levels {
+  height: 22px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.levelsImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.logoSection {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  left: 69.5px;
+  top: 279px;
+}
+
+.logoContainer {
+  height: 40px;
+  position: relative;
+  flex-shrink: 0;
+  width: 43px;
+}
+
+.logoBackground {
+  position: absolute;
+  inset: 0;
+}
+
+.logoImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.logoUnion {
+  position: absolute;
+  top: 2.33%;
+  right: 0;
+  bottom: 62.79%;
+  left: 58.7%;
+}
+
+.logoUnionImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.logoTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5px;
+  align-items: flex-start;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: white;
+  white-space: pre-wrap;
+}
+
+.logoTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 43.034px;
+  color: black;
+  width: 261.625px;
+}
+
+.logoTitleSpan {
+  font-family: 'Nixie One', sans-serif;
+  font-style: normal;
+}
+
+.logoSubtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 16.14px;
+  letter-spacing: 1.614px;
+  width: 261.625px;
+}
+
+.footerSection {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  left: -1px;
+  top: 737px;
+}
+
+.studioLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  text-align: center;
+  width: 139px;
+}
+
+.studioLogoHeart {
+  font-family: 'Montserrat', 'Noto Sans', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  min-width: 100%;
+  position: relative;
+  flex-shrink: 0;
+  color: #ffd6d6;
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  width: min-content;
+  white-space: pre-wrap;
+}
+
+.studioLogoText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 0.56px;
+}
+
+.studioLogoTextSpan {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.homeIndicator {
+  height: 34px;
+  position: relative;
+  flex-shrink: 0;
+  width: 402px;
+}
+
+.homeIndicatorContainer {
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  height: 5px;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 144px;
+}
+
+.homeIndicatorRotate {
+  flex: none;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.homeIndicatorBar {
+  background-color: var(--labels-primary, black);
+  height: 5px;
+  border-radius: 100px;
+  width: 144px;
+}
